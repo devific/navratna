@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
   return (
     <div className="flex flex-col w-full overflow-hidden">
       {/* SECTION 1: HERO */}
-      <section className="relative h-screen min-h-[700px] flex items-center px-6 md:px-12 bg-maroon overflow-hidden">
+      <section className="relative min-h-[700px] flex items-center px-6 md:px-12 bg-maroon overflow-hidden max-lg:py-32">
         {/* Abstract shapes/bg */}
         <div className="absolute inset-0 bg-[#3a0e0e]" />
 
@@ -31,7 +31,7 @@ export const Home: React.FC = () => {
           >
             <motion.div
               variants={fadeInUp}
-              className="flex items-center gap-2 mb-6"
+              className="flex items-center gap-2 mb-2 lg:mb-6"
             >
               <span className="px-3 py-1 rounded-full bg-gold/20 text-gold text-xs font-bold tracking-widest uppercase border border-gold/20">
                 Pure Vegetarian
@@ -40,7 +40,7 @@ export const Home: React.FC = () => {
 
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-[1.1]"
+              className="text-4xl md:text-7xl lg:text-8xl font-serif text-white mb-4 lg:mb-8 leading-[1.1]"
             >
               The Taste of <br />
               <span className="text-gold">Tradition.</span>
@@ -48,7 +48,7 @@ export const Home: React.FC = () => {
 
             <motion.p
               variants={fadeInUp}
-              className="text-xl text-white/70 mb-10 max-w-lg leading-relaxed font-light"
+              className="text-lg lg:text-xl text-white/70 mb-4 lg:mb-10 max-w-lg leading-relaxed font-light"
             >
               From crispy Dosas to steaming Chai. Experience the authentic
               flavors of India, crafted with love and fresh ingredients.
@@ -56,12 +56,12 @@ export const Home: React.FC = () => {
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
               <Link to="/menu">
-                <Button variant="primary" className="px-10 py-4 text-lg">
+                <Button variant="primary" className="px-10 py-4 text-lg w-full">
                   View Menu
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" className="px-10 py-4 text-lg">
+                <Button variant="outline" className="px-10 py-4 text-lg w-full">
                   Find a Location
                 </Button>
               </Link>
@@ -72,19 +72,19 @@ export const Home: React.FC = () => {
             initial={{ opacity: 0, scale: 0.8, rotate: 10 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1, type: "spring" }}
-            className="relative hidden lg:block"
+            className="relative"
           >
             <div className="absolute inset-0 bg-gold/20 blur-3xl rounded-full transform scale-110"></div>
             <img
               src={IMAGES.hero}
               alt="South Indian Feast"
-              className="relative z-10 rounded-[3rem] shadow-2xl border-4 border-white/10 w-full object-cover h-[600px] hover:scale-[1.02] transition-transform duration-700"
+              className="relative z-10 rounded-[3rem] shadow-2xl border-4 border-white/10 w-full object-cover h-[300px] lg:h-[600px] hover:scale-[1.02] transition-transform duration-700"
             />
             {/* Floating badges */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 4 }}
-              className="absolute -bottom-6 -left-6 bg-cream p-6 rounded-2xl shadow-xl z-20 flex items-center gap-4"
+              className="absolute -bottom-6 -left-6 bg-cream p-2 lg:p-6 rounded-2xl shadow-xl z-20 flex items-center gap-4"
             >
               <div className="bg-maroon/10 p-3 rounded-full">
                 <Coffee className="text-maroon" />
