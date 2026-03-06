@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Star, ArrowRight, Coffee, Wheat, Leaf } from "lucide-react";
 import { Button } from "../components/Button";
 import { IMAGES, TESTIMONIALS } from "../constants";
+import Videos from "@/components/Videos";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -101,6 +102,8 @@ export const Home: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+      <Videos />
 
       {/* SECTION 2: STORY / FEATURES */}
       <section className="py-24 px-6 bg-white">
@@ -227,7 +230,7 @@ export const Home: React.FC = () => {
 
       {/* SECTION 4: AMBIANCE / CHAI */}
       <section
-        className="relative h-[500px] flex items-center justify-center bg-fixed bg-center bg-cover"
+        className="relative min-h-[500px] flex items-center justify-center bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${IMAGES.ambiance})` }}
       >
         <div className="absolute inset-0 bg-maroon/70"></div>
