@@ -141,7 +141,7 @@ export const IMAGES = {
     "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070&auto=format&fit=crop",
   // Coffee / Chai ambience
   ambiance:
-    "https://images.unsplash.com/photo-1596920566829-d73ad30fe71b?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1725483990070-509319bc6ecc?q=80&w=2070&auto=format&fit=crop",
   // Featured Dishes
   dish1:
     "https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=2070&auto=format&fit=crop", // Dosa
